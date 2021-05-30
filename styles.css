@@ -6,6 +6,7 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
+
 /* ~~~~~~~~~ Global ~~~~~~~~~~ */
 
 * {
@@ -26,6 +27,10 @@ label {
   font-style: italic;
 }
 
+input {
+  text-align: center;
+}
+
 .hidden {
   display: none!important;
 }
@@ -37,12 +42,22 @@ label {
   margin-bottom: 0.25%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 14vh;
+  margin-top: 9vh;
   font-weight: bold;
   font-size: 0.9em;
 }
 
 /* ~~~~~~~~~ Login Page ~~~~~~~~~~~~~~ */
+
+.img-box {
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:5.5%;
+  margin-bottom: 0;
+  /* border: solid;
+  border-color: red; */
+}
 
 .login-box {
   width: 55vw;
@@ -62,7 +77,6 @@ label {
   margin-right: auto;
   border: none;
   border-radius: 8px;
-  /* figure out how to center the input text */
 }
 
 .login-btn {
@@ -71,17 +85,30 @@ label {
   margin-left: auto;
   margin-right: auto;
   border-radius: 4.5px;
-  /* border-style: none; */
+  border-style: none;
   padding: 1.2% 6% 1.2% 6%;
   background-color: #134d71;
   color: white;
+  transition: background 1s ease,
+              all 1.25s ease 0s;
 }
 
-
+.login-btn:hover {
+  background-color: #78a7c6;
+  transform: scale(1.16);
+}
 
 /* ~~~~~~~~ Main Page Section ~~~~~~~~~~~~ */
 
 .header-text {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 6vh;
+  font-size: 1.2em
+}
+
+.welcome-message {
   color: white;
   text-align: center;
   font-weight: bold;
@@ -120,10 +147,20 @@ label {
 
 .affirmation-btn {
   margin-left: 13%;
+  transition: all 0.5s ease 0s;
+}
+
+.affirmation-btn:hover {
+  transform: scale(1.5);
 }
 
 .mantra-btn {
-  margin-left: 37%
+  margin-left: 37%;
+  transition: all 0.5s ease 0s;
+}
+
+.mantra-btn:hover {
+  transform: scale(1.5);
 }
 
 .receive-msg-btn {
@@ -141,6 +178,13 @@ label {
   padding: 0.75% 4% 0.75% 4%;
   background-color: #134d71;
   color: white;
+  transition: background 1.0s ease,
+              all 0.75s ease 0s;
+}
+
+.receive-msg-btn button:hover {
+  background-color: #78a7c6;
+  transform: scale(1.1);
 }
 
 .display-box {

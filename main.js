@@ -1,5 +1,3 @@
-//Global Variables
-
 var mantras = [
   "Breathing in, I send myself love. Breathing out, I send love to someone else who needs it.",
   "Don’t let yesterday take up too much of today.",
@@ -33,8 +31,6 @@ var affirmations = [
   "I manifest perfect health by making smart choices."
 ]
 
-// Query Selectors
-
 var affirmationBtn = document.getElementById('affirmation-input');
 var mantraBtn = document.getElementById('mantra-input');
 var receiveMessageBtn = document.getElementById('receiveBtn');
@@ -47,13 +43,10 @@ var loginPage = document.querySelector('.login');
 var mainPage = document.querySelector('.main-Page');
 
 
-
-// Event Listeners
-
 receiveMessageBtn.addEventListener('click', showMessage);
 loginBtn.addEventListener('click', displayMain);
 
-// Event Handlers
+
 function showMessage() {
   bellIconBox.classList.add('hidden');
   messageDisplayBox.classList.remove('hidden');
@@ -79,18 +72,6 @@ function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
 
-// Login Functions
-//goal: hide login screen, bring user to main page where their inputed
-//text is displayed in a welcome message on the screen
-
-//input: Login button click, user text input
-//output: hide login, show main; new message interpolated with text input.
-//steps:
-
-// on button click,
-// grab user text input
-// interpolate into the innertext of the h6 element
-
 function displayMain() {
   loginPage.classList.add('hidden');
   mainPage.classList.remove('hidden');
@@ -98,6 +79,5 @@ function displayMain() {
 }
 
 function showGreeting() {
-  // welcomeMsg.innerText = ""
-  welcomeMsg.innerText = `Namaste, ${nameInput.value}. ☮`
+  welcomeMsg.innerText = `☮ Namaste, ${nameInput.value} ☮`
 }
