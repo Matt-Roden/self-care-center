@@ -28,4 +28,4 @@ _Main function_: This application allows a user to enter their name to login, wh
 
 3. Below the button, the meditation icon will disappear and a randomly generated mantra or affirmation will be displayed in it's place.
 
-4. If the user does not select between either an affirmation or mantra and clicks the "Receive Message" button, the display bot will prompt the user to make a selection in order to see a message. 
+4. If the user does not select between either an affirmation or mantra and clicks the "Receive Message" button, the display box will prompt the user to make a selection in order to see a message. 
